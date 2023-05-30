@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<H1 id=настройка-failsafe 
+style='BOX-SIZING: border-box; FONT-SIZE: 2em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Настройка 
+failsafe</H1>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Основная 
+статья:<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BACKGROUND: 0px 0px; COLOR: rgb(65,131,196); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased" 
+href="https://docs.px4.io/master/en/config/safety.html" 
+target=_blank>https://docs.px4.io/master/en/config/safety.html</A>.</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Во 
+вкладке<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Safety</EM><SPAN>&nbsp;</SPAN>настраиваются 
+реакции квадрокоптера на различные нештатные ситуации. Рекомендуется включить 
+как минимум реакцию на потерю связи с пультом управления:</P>
+<OL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Откройте 
+  вкладку<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Safety</EM>.</LI>
+  <LI 
+  style="BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">В 
+  блоке<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">RC 
+  Loss Failsafe Trigger</EM><SPAN>&nbsp;</SPAN>выберите один из рекомендуемых 
+  вариантов реакции на потерю связи с пультом:
+  <UL 
+  style="BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 2em; MARGIN: 0px; PADDING-RIGHT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">
+    <LI 
+    style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased"><EM 
+    style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Land 
+    mode</EM><SPAN>&nbsp;</SPAN>– переход в режим посадки;</LI>
+    <LI 
+    style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased"><EM 
+    style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Terminate</EM><SPAN>&nbsp;</SPAN>– 
+    аварийное отключение моторов.</LI></UL></LI>
+  <LI 
+  style="BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">В 
+  поле<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">RC 
+  Loss Timeout</EM><SPAN>&nbsp;</SPAN>выберите значение таймаута, по истечении 
+  которого связь с пультом считается потерянной. Рекомендуемое значение – 0.5 
+  s.</LI></OL>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'><IMG 
+class=zoom 
+style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid" 
+alt="QGroundControl failsafe" 
+src="https://clover.coex.tech/assets/qgc-failsafe.png"></P></BODY></HTML>

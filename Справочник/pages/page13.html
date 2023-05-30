@@ -1,0 +1,318 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<H1 id=полет 
+style='BOX-SIZING: border-box; FONT-SIZE: 2em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Полет</H1>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Этот 
+раздел объясняет основы управление квадрокоптером с использование пульта 
+радиоуправления в различных режимах (для автономных полетов смотрите раздел "<A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BACKGROUND: 0px 0px; COLOR: rgb(65,131,196); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased" 
+href="https://clover.coex.tech/ru/programming.html">Программирование</A>").</P>
+<H2 id=основные-возможности-радиоаппаратуры 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.75em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Основные 
+возможности радиоаппаратуры</H2>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Прежде 
+чем запускать ваш коптер, необходимо разобраться, как работает пульт 
+радиоуправления ("аппаратура" в общепринятой терминологии авиамоделизма).</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Управление 
+дроном происходит с помощью двух стиков на аппаратуре. По умолчанию левый стик 
+отвечает за газ и рысканье, а правый за крен и тангаж. Данные термины 
+используются для всех летательных судов, от самолетов до квадрокоптеров.</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'><IMG 
+class="zoom center" 
+style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; MARGIN-LEFT: auto; BORDER-LEFT: 0px; DISPLAY: block; MARGIN-RIGHT: auto; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid" 
+src="https://clover.coex.tech/assets/flight/rc_basic_commands.svg" 
+width=400></P>
+<UL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Газ 
+  (<EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">throttle</EM>) 
+  – отвечает за скорость вращения двигателей.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Рысканье 
+  (<EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">yaw</EM>) 
+  – отвечает за повороты вокруг вертикальной оси (Z), по часовой (при наклоне 
+  вправо) и против часовой (при наклоне влево) стрелки.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Тангаж 
+  (<EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">pitch</EM>) 
+  – отвечает за наклон или движение вперёд/назад.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Крен 
+  (<EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">roll</EM>) 
+  – отвечает за наклон или движение влево/вправо.</LI></UL>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Данные 
+описания предполагают, что коптер находится задней частью к пилоту.</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'><IMG 
+class="zoom center" 
+style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; MARGIN-LEFT: auto; BORDER-LEFT: 0px; DISPLAY: block; MARGIN-RIGHT: auto; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid" 
+src="https://clover.coex.tech/assets/flight/basic_movements_multicopter.svg" 
+width=400></P>
+<H2 id=полетные-режимы 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.75em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Полетные 
+режимы</H2>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Ручное 
+полет с использованием полетного контроллера PX4 может происходит с 
+использованием разных полетных режимов, которые определяют назначения стиков 
+радиопульта и другие характеристики полета. Полный список полетных режимов 
+приведен в статье "<A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BACKGROUND: 0px 0px; COLOR: rgb(65,131,196); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased" 
+href="https://clover.coex.tech/ru/modes.html">Полетные режимы</A>".</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Основные 
+ручные режимы разобраны далее.</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'><STRONG 
+style="BOX-SIZING: border-box; FONT-WEIGHT: 700; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">STABILIZED</STRONG><SPAN>&nbsp;</SPAN>- 
+режим стабилизации горизонтального положения. В данном режиме коптер будет 
+удерживать горизонт, если им не управлять. Назначение стиков:</P>
+<UL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Газ 
+  – усредненная скорость вращения моторов.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Рысканье 
+  – угловая скорость вокруг вертикальной оси.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Тангаж 
+  – угол наклона вокруг поперечной оси (вперед/назад).</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Крен 
+  – угол наклон вокруг продольной оси (влево/вправо).</LI></UL>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'><STRONG 
+style="BOX-SIZING: border-box; FONT-WEIGHT: 700; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">POSCTL</STRONG><SPAN>&nbsp;</SPAN>– 
+режим удержания позиции (требуется включенная система позиционирования). 
+Назначение стиков:</P>
+<UL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Газ 
+  - вертикальная скорость полета.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Рысканье 
+  - угловая скорость вокруг вертикальной оси.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Тангаж 
+  - линейная скорость полета дрона (вперед/назад).</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Крен 
+  - линейная скорость полета дрона (влево/вправо).</LI></UL>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'><STRONG 
+style="BOX-SIZING: border-box; FONT-WEIGHT: 700; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">ACRO</STRONG><SPAN>&nbsp;</SPAN>– 
+режим управление средней скоростью вращения моторов и угловыми скоростями дрона. 
+Этот режим является наиболее сложным для пилотирования и чаще всего применяется 
+дрон-рейсерами и в шоу 3D-пилотирования для выполнения трюков. Назначение 
+стиков:</P>
+<UL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Газ 
+  – усредненная скорость вращения моторов.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Рысканье 
+  – угловая скорость вокруг вертикальной оси.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Тангаж 
+  – угловая скорость вокруг поперечной оси (вперед/назад).</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Крен 
+  – угловая скорость вокруг продольной оси (влево/вправо).</LI></UL>
+<BLOCKQUOTE class="clearfix alert alert-info" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; BORDER-TOP-COLOR: rgb(188,232,241); BACKGROUND: rgb(217,237,247); WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(188,232,241) 5px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(133,133,133); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 15px; BORDER-LEFT: rgb(229,229,229) 4px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; BORDER-RIGHT-COLOR: rgb(188,232,241); LETTER-SPACING: 0px; PADDING-RIGHT: 15px; TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; break-inside: avoid; border-radius: 5px; text-decoration-thickness: initial'><STRONG 
+  class="fa fa-2x fa-info" 
+  style="BOX-SIZING: border-box; HEIGHT: 80px; WIDTH: 60px; FLOAT: left; TEXT-ALIGN: center; PADDING-TOP: 14px; FONT: 700 2em/1 FontAwesome; DISPLAY: inline-block; MARGIN-RIGHT: 10px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; text-rendering: auto"></STRONG>
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-TOP: 15px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">В 
+  других полетных контроллерах аналогичные полетные режимы могут называться 
+  по-другому.</P></BLOCKQUOTE>
+<H2 id=подготовка-к-полету 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.75em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Подготовка 
+к полету</H2>
+<H3 id=установка-пропеллеров-и-акб 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.5em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Установка 
+пропеллеров и АКБ</H3>
+<OL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Установите 
+  ремешок для аккумулятора.</P>
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased"><IMG 
+  class="zoom border center" 
+  style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: rgb(233,233,233) 1px solid; BORDER-RIGHT: rgb(233,233,233) 1px solid; BORDER-BOTTOM: rgb(233,233,233) 1px solid; MARGIN-LEFT: auto; BORDER-LEFT: rgb(233,233,233) 1px solid; DISPLAY: block; MARGIN-RIGHT: auto; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid; border-radius: 5px" 
+  src="https://clover.coex.tech/assets/assembling_clever4_2/final_1.png" 
+  width=300></P></LI>
+  <LI 
+  style="BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Установите 
+  пропеллеры в соответствии со<SPAN>&nbsp;</SPAN><A 
+  style="BOX-SIZING: border-box; TEXT-DECORATION: none; BACKGROUND: 0px 0px; COLOR: rgb(65,131,196); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased" 
+  href="https://clover.coex.tech/ru/flight.html#prop_rotation">схемой 
+  направления движения моторов</A>.</P>
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased"><IMG 
+  class="zoom border center" 
+  style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: rgb(233,233,233) 1px solid; BORDER-RIGHT: rgb(233,233,233) 1px solid; BORDER-BOTTOM: rgb(233,233,233) 1px solid; MARGIN-LEFT: auto; BORDER-LEFT: rgb(233,233,233) 1px solid; DISPLAY: block; MARGIN-RIGHT: auto; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid; border-radius: 5px" 
+  src="https://clover.coex.tech/assets/assembling_clever4_2/final_3.png" 
+  width=300></P></LI>
+  <LI 
+  style="BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Закрепите 
+  пищалку и установите аккумулятор.</P>
+  <DIV class=image-group 
+  style="BOX-SIZING: border-box; DISPLAY: flex; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; justify-content: center; flex-wrap: wrap"><IMG 
+  class="zoom border" 
+  style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: rgb(233,233,233) 1px solid; BORDER-RIGHT: rgb(233,233,233) 1px solid; WIDTH: 300px; BORDER-BOTTOM: rgb(233,233,233) 1px solid; BORDER-LEFT: rgb(233,233,233) 1px solid; MARGIN: 0px 10px 0.85em; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid; border-radius: 5px; align-self: center" 
+  src="https://clover.coex.tech/assets/flight/buzzer_acb.jpg" width=200><IMG 
+  class="zoom border" 
+  style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: rgb(233,233,233) 1px solid; BORDER-RIGHT: rgb(233,233,233) 1px solid; WIDTH: 300px; BORDER-BOTTOM: rgb(233,233,233) 1px solid; BORDER-LEFT: rgb(233,233,233) 1px solid; MARGIN: 0px 10px 0.85em; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid; border-radius: 5px; align-self: center" 
+  src="https://clover.coex.tech/assets/assembling_clever4_2/final_4.png" 
+  width=300></DIV></LI></OL>
+<H3 id=настройка-пищалки 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.5em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Настройка 
+пищалки</H3>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Для 
+того, чтобы не переразрядить и не испортить аккумулятор, рекомендуется 
+использовать индикатор напряжения (<EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">пищалка</EM>).</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Для 
+настройки<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">пищалки</EM><SPAN>&nbsp;</SPAN>подключите 
+ее к балансировочному разъему вашего аккумулятора. Теперь, нажимая на кнопку в 
+основании будет изменяться минимальное напряжение на ячейках. Оптимальное 
+значение минимального напряжения является<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">3.5-3.6 
+V</EM>.</P>
+<DIV class=image-group 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: flex; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial; justify-content: center; flex-wrap: wrap'><IMG 
+class="zoom border" 
+style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: rgb(233,233,233) 1px solid; BORDER-RIGHT: rgb(233,233,233) 1px solid; WIDTH: 300px; BORDER-BOTTOM: rgb(233,233,233) 1px solid; BORDER-LEFT: rgb(233,233,233) 1px solid; MARGIN: 0px 10px 0.85em; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid; border-radius: 5px; align-self: center" 
+src="https://clover.coex.tech/assets/flight/buzzer_connection.jpg" 
+width=300><IMG class="zoom border" 
+style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: rgb(233,233,233) 1px solid; BORDER-RIGHT: rgb(233,233,233) 1px solid; WIDTH: 300px; BORDER-BOTTOM: rgb(233,233,233) 1px solid; BORDER-LEFT: rgb(233,233,233) 1px solid; MARGIN: 0px 10px 0.85em; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid; border-radius: 5px; align-self: center" 
+src="https://clover.coex.tech/assets/flight/buzzer.jpg" width=300></DIV>
+<H3 id=состояния-готовности-к-полету 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.5em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Состояния 
+готовности к полету</H3>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Прежде 
+чем начинать полет, необходимо перевести коптер в 
+состояние<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Armed</EM>.</P>
+<UL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Состояние<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Armed</EM><SPAN>&nbsp;</SPAN>– 
+  моторы вращаются в соответствии с положением стика газа, коптер готов к 
+  полету.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Состояние<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Disarmed</EM><SPAN>&nbsp;</SPAN>– 
+  моторы не вращаются, коптер не реагирует на стик газа.</LI></UL>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>По 
+умолчанию коптер находится в состоянии<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Disarmed</EM><SPAN>&nbsp;</SPAN>и 
+переходит в него в случае если вы долго не взлетаете.</P>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Для 
+перевода коптера в состояние<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Armed</EM><SPAN>&nbsp;</SPAN>есть 
+несколько способов:</P>
+<UL 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 2em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; LETTER-SPACING: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">С 
+  помощью стика – переведите левый стик вниз вправо и подождите пару секунд.</P>
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased"><IMG 
+  class="zoom center" 
+  style="BOX-SIZING: border-box; CURSOR: zoom-in; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; MARGIN-LEFT: auto; BORDER-LEFT: 0px; DISPLAY: block; MARGIN-RIGHT: auto; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid" 
+  src="https://clover.coex.tech/assets/flight/controller_arm.jpg" 
+  width=300></P></LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-BOTTOM: 0.85em; MARGIN-TOP: 0px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">С 
+  помощью тумблера – состояния Armed/Disarmed можно настроить на один из 
+  тумблеров. Подробнее о настройке в смотрите в статье про<SPAN>&nbsp;</SPAN><A 
+  style="BOX-SIZING: border-box; TEXT-DECORATION: none; BACKGROUND: 0px 0px; COLOR: rgb(65,131,196); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased" 
+  href="https://clover.coex.tech/ru/modes.html">полетные режимы</A>.</P></LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">С 
+  помощью QGC – вы можете заармить ваш дрон программно. Для этого нажмите на 
+  надпись<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Disarmed</EM><SPAN>&nbsp;</SPAN>в 
+  шапке и выберите другое состояние.</LI>
+  <LI 
+  style="LIST-STYLE-TYPE: none; BOX-SIZING: border-box; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">С 
+  помощью<SPAN>&nbsp;</SPAN><A 
+  style="BOX-SIZING: border-box; TEXT-DECORATION: none; BACKGROUND: 0px 0px; COLOR: rgb(65,131,196); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased" 
+  href="https://clover.coex.tech/ru/programming.html">программы</A><SPAN>&nbsp;</SPAN>- 
+  коптер может перейти в состояние<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Armed</EM>, 
+  если в навигационной команде, такой как<SPAN>&nbsp;</SPAN><CODE 
+  style='BOX-SIZING: border-box; FONT-SIZE: 0.85em; BORDER-TOP: medium none; FONT-FAMILY: Consolas, "Liberation Mono", Menlo, Courier, monospace; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; COLOR: ; PADDING-BOTTOM: 0.2em; DIRECTION: ltr; PADDING-TOP: 0.2em; PADDING-LEFT: 0.2em; BORDER-LEFT: medium none; MARGIN: 0px; PADDING-RIGHT: 0.2em; BACKGROUND-COLOR: rgb(247,247,247); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid'>navigate</CODE>,<SPAN>&nbsp;</SPAN><CODE 
+  style='BOX-SIZING: border-box; FONT-SIZE: 0.85em; BORDER-TOP: medium none; FONT-FAMILY: Consolas, "Liberation Mono", Menlo, Courier, monospace; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; COLOR: ; PADDING-BOTTOM: 0.2em; DIRECTION: ltr; PADDING-TOP: 0.2em; PADDING-LEFT: 0.2em; BORDER-LEFT: medium none; MARGIN: 0px; PADDING-RIGHT: 0.2em; BACKGROUND-COLOR: rgb(247,247,247); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid'>set_position</CODE><SPAN>&nbsp;</SPAN>и 
+  т.д., указан параметр<SPAN>&nbsp;</SPAN><CODE 
+  style='BOX-SIZING: border-box; FONT-SIZE: 0.85em; BORDER-TOP: medium none; FONT-FAMILY: Consolas, "Liberation Mono", Menlo, Courier, monospace; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; COLOR: ; PADDING-BOTTOM: 0.2em; DIRECTION: ltr; PADDING-TOP: 0.2em; PADDING-LEFT: 0.2em; BORDER-LEFT: medium none; MARGIN: 0px; PADDING-RIGHT: 0.2em; BACKGROUND-COLOR: rgb(247,247,247); -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-inside: avoid'>auto_arm=True</CODE>.</LI></UL>
+<H3 id=kill-switch 
+style='BOX-SIZING: border-box; FONT-SIZE: 1.5em; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 1.27em; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; break-after: avoid; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Kill 
+switch</H3>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>При 
+активации тумблера<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Kill 
+Switch</EM><SPAN>&nbsp;</SPAN>на моторы перестают посылаться сигналы управления, 
+и моторы перестают вращаться. Эта функция используется в крайних случаях, к 
+примеру, если вы потеряли управление над коптером.</P>
+<BLOCKQUOTE class="clearfix alert alert-warning" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; BORDER-TOP-COLOR: rgb(250,235,204); BACKGROUND: rgb(252,248,227); WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(250,235,204) 5px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(133,133,133); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 15px; BORDER-LEFT: rgb(229,229,229) 4px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.85em; BORDER-RIGHT-COLOR: rgb(250,235,204); LETTER-SPACING: 0px; PADDING-RIGHT: 15px; TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; break-inside: avoid; border-radius: 5px; text-decoration-thickness: initial'><STRONG 
+  class="fa fa-2x fa-exclamation-triangle" 
+  style="BOX-SIZING: border-box; HEIGHT: 80px; WIDTH: 60px; FLOAT: left; TEXT-ALIGN: center; PADDING-TOP: 14px; FONT: 700 2em/1 FontAwesome; DISPLAY: inline-block; MARGIN-RIGHT: 10px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; text-rendering: auto"></STRONG>
+  <P 
+  style="BOX-SIZING: border-box; MARGIN-TOP: 15px; ORPHANS: 3; WIDOWS: 3; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Будьте 
+  внимательны,<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Kill 
+  Switch</EM><SPAN>&nbsp;</SPAN>не переводит коптер в 
+  состояние<SPAN>&nbsp;</SPAN><EM 
+  style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Disarmed</EM>!</P></BLOCKQUOTE>
+<P 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN-BOTTOM: 0.85em; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 3; WIDOWS: 3; LETTER-SPACING: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial'>Перед 
+отключением<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Kill 
+Switch</EM><SPAN>&nbsp;</SPAN>убедитесь, что стик газа находится в нижнем 
+положении и коптер находится в состоянии<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Disarmed</EM>. 
+В случае, если стик газа не находится в нижнем положении, при 
+отключении<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; FONT-STYLE: italic; -webkit-tap-highlight-color: transparent; text-size-adjust: none; -webkit-font-smoothing: antialiased">Kill 
+Switch</EM><SPAN>&nbsp;</SPAN>на моторы будет подан сигнал соответствующий 
+положению стика в данный момент, что приведет к резкому рывку 
+коптера.</P></BODY></HTML>
